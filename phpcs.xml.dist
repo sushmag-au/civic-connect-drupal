@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ruleset name="CivicConnect Drupal Standards">
+    <description>PHP CodeSniffer configuration for CivicConnect Drupal 11 custom modules.</description>
+
+    <!-- Paths to scan -->
+    <file>web/modules/custom</file>
+
+    <!-- Exclude patterns -->
+    <exclude-pattern>*/vendor/*</exclude-pattern>
+    <exclude-pattern>*/node_modules/*</exclude-pattern>
+    <exclude-pattern>*.css</exclude-pattern>
+    <exclude-pattern>*.js</exclude-pattern>
+
+    <!-- Configuration flags -->
+    <arg name="extensions" value="php,module,inc,install,test,profile,theme"/>
+    <arg name="report" value="full"/>
+    <arg value="p"/>
+    <arg value="s"/>
+
+    <!-- Include Drupal Coding Standards -->
+    <rule ref="Drupal">
+        <exclude name="Drupal.InfoFiles.AutoAddedKeys.Version"/>
+    </rule>
+    <rule ref="DrupalPractice"/>
+</ruleset>

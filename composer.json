@@ -1,0 +1,108 @@
+{
+    "name": "civicconnect/drupal-backend",
+    "description": "CivicConnect - Headless Drupal 11 Backend for City of Greater Geelong Civic Services Portal",
+    "type": "project",
+    "license": "GPL-2.0-or-later",
+    "homepage": "https://geelongaustralia.com.au",
+    "authors": [
+        {
+            "name": "Sushma Gogula",
+            "role": "Senior Drupal Developer"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        }
+    ],
+    "require": {
+        "php": ">=8.3",
+        "composer/installers": "^2.0",
+        "drupal/core": "~11.0",
+        "drupal/core-composer-scaffold": "~11.0",
+        "drupal/core-project-message": "~11.0",
+        "drupal/jsonapi_extras": "^3.24",
+        "drupal/metatag": "^2.0",
+        "drupal/paragraphs": "^1.17",
+        "drupal/pathauto": "^1.12",
+        "drupal/redirect": "^1.9",
+        "drupal/simple_oauth": "^5.2 || ^6.0",
+        "drupal/token": "^1.14",
+        "drush/drush": "^13.0"
+    },
+    "require-dev": {
+        "drupal/core-dev": "~11.0"
+    },
+    "conflict": {
+        "drupal/drupal": "*"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "config": {
+        "allow-plugins": {
+            "composer/installers": true,
+            "drupal/core-composer-scaffold": true,
+            "drupal/core-project-message": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "phpstan/extension-installer": true
+        },
+        "sort-packages": true
+    },
+    "extra": {
+        "drupal-scaffold": {
+            "locations": {
+                "web-root": "web/"
+            }
+        },
+        "installer-paths": {
+            "web/core": [
+                "type:drupal-core"
+            ],
+            "web/libraries/{$name}": [
+                "type:drupal-library"
+            ],
+            "web/modules/contrib/{$name}": [
+                "type:drupal-module"
+            ],
+            "web/profiles/contrib/{$name}": [
+                "type:drupal-profile"
+            ],
+            "web/themes/contrib/{$name}": [
+                "type:drupal-theme"
+            ],
+            "drush/Commands/contrib/{$name}": [
+                "type:drupal-drush"
+            ],
+            "web/modules/custom/{$name}": [
+                "type:drupal-custom-module"
+            ],
+            "web/themes/custom/{$name}": [
+                "type:drupal-custom-theme"
+            ]
+        },
+        "drupal-core-project-message": {
+            "include-keys": [
+                "post-install-commands"
+            ],
+            "post-install-commands": {
+                "additional-info": [
+                    "----------------------------------------------------------------",
+                    "CivicConnect - Drupal 11 Headless API Backend Initialized",
+                    "City of Greater Geelong Council Services Portal",
+                    "Run scripts/setup.sh to install Drupal and enable JSON:API suite",
+                    "Run scripts/seed-content.sh to populate civic services and news",
+                    "----------------------------------------------------------------"
+                ]
+            }
+        }
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "@drupal-scaffold"
+        ],
+        "post-update-cmd": [
+            "@drupal-scaffold"
+        ]
+    }
+}
