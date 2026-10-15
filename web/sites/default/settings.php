@@ -4,7 +4,7 @@
  * @file
  * Drupal 11 configuration settings for CivicConnect headless backend.
  *
- * Configured for City of Greater Geelong Civic Portal decoupled architecture.
+ * Configured for City of Harborview Civic Portal decoupled architecture.
  *
  * @see https://api.drupal.org/api/drupal/core!assets!scaffold!files!default.settings.php/11
  */

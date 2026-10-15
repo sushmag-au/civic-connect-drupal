@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # ==============================================================================
 # CivicConnect - Automated Setup Script
-# Drupal 11 Headless Backend for City of Greater Geelong
+# Drupal 11 Headless Backend for City of Harborview
 # ==============================================================================
 
 set -euo pipefail
@@ -15,7 +15,7 @@ RED='\033[0;31m'
 NC='\033[0m'
 
 echo -e "${BLUE}================================================================${NC}"
-echo -e "${CYAN}   CivicConnect - City of Greater Geelong Drupal 11 Setup       ${NC}"
+echo -e "${CYAN}   CivicConnect - City of Harborview Drupal 11 Setup       ${NC}"
 echo -e "${BLUE}================================================================${NC}"
 
 # Detect if running inside Docker container or host
@@ -93,7 +93,7 @@ if [ ! -f "$DRUSH" ]; then
 fi
 
 $DRUSH site:install standard \
-  --site-name="CivicConnect | City of Greater Geelong" \
+  --site-name="CivicConnect | City of Harborview" \
   --site-mail="admin@geelongcity.vic.gov.au" \
   --account-name="admin" \
   --account-pass="admin123" \

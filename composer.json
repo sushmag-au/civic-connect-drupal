@@ -1,6 +1,6 @@
 {
     "name": "civicconnect/drupal-backend",
-    "description": "CivicConnect - Headless Drupal 11 Backend for City of Greater Geelong Civic Services Portal",
+    "description": "CivicConnect - Headless Drupal 11 Backend for City of Harborview Civic Services Portal",
     "type": "project",
     "license": "GPL-2.0-or-later",
     "homepage": "https://geelongaustralia.com.au",
@@ -89,7 +89,7 @@
                 "additional-info": [
                     "----------------------------------------------------------------",
                     "CivicConnect - Drupal 11 Headless API Backend Initialized",
-                    "City of Greater Geelong Council Services Portal",
+                    "City of Harborview Council Services Portal",
                     "Run scripts/setup.sh to install Drupal and enable JSON:API suite",
                     "Run scripts/seed-content.sh to populate civic services and news",
                     "----------------------------------------------------------------"
