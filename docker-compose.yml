@@ -15,7 +15,7 @@ services:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_HOST: db
       MYSQL_PORT: 3306
-      DRUPAL_HASH_SALT: civicconnect_dev_salt_geelong_portfolio_2026_secure
+      DRUPAL_HASH_SALT: civicconnect_dev_salt_harborview_2026_secure
       PHP_MEMORY_LIMIT: 512M
     depends_on:
       db:

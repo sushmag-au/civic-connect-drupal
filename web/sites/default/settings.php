@@ -30,7 +30,7 @@ $databases['default']['default'] = [
 $settings['config_sync_directory'] = '../config/sync';
 
 // Drupal Hash Salt
-$settings['hash_salt'] = getenv('DRUPAL_HASH_SALT') ?: 'civicconnect-geelong-band7-drupal11-portfolio-secure-salt-2026';
+$settings['hash_salt'] = getenv('DRUPAL_HASH_SALT') ?: 'civicconnect-harborview-drupal11-2026-secure-salt';
 
 // Trusted Host Patterns
 $settings['trusted_host_patterns'] = [

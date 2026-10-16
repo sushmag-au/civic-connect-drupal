@@ -94,10 +94,10 @@ fi
 
 $DRUSH site:install standard \
   --site-name="CivicConnect | City of Harborview" \
-  --site-mail="admin@geelongcity.vic.gov.au" \
+  --site-mail="admin@harborview.vic.gov.au" \
   --account-name="admin" \
   --account-pass="admin123" \
-  --account-mail="admin@geelongcity.vic.gov.au" \
+  --account-mail="admin@harborview.vic.gov.au" \
   --locale="en" \
   --yes
 

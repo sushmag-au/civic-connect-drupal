@@ -3,7 +3,7 @@
     "description": "CivicConnect - Headless Drupal 11 Backend for City of Harborview Civic Services Portal",
     "type": "project",
     "license": "GPL-2.0-or-later",
-    "homepage": "https://geelongaustralia.com.au",
+    "homepage": "https://github.com/sushmag-au/civic-connect-drupal",
     "authors": [
         {
             "name": "Sushma Gogula",
